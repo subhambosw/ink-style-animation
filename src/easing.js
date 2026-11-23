@@ -22,3 +22,6 @@ export function easeInOutCubic(t) {
 export function easeInQuart(t) {
   return t * t * t * t;
 }
+export function easeOutQuart(t) {
+  return 1 - (--t) * t * t * t;
+}
