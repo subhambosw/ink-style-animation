@@ -25,3 +25,6 @@ export function easeInQuart(t) {
 export function easeOutQuart(t) {
   return 1 - (--t) * t * t * t;
 }
+export function easeInExpo(t) {
+  return t === 0 ? 0 : Math.pow(2, 10 * (t - 1));
+}
