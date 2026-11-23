@@ -35,3 +35,8 @@ export function vecLimit(v, max) {
 export function vecCopy(v) {
   return { x: v.x, y: v.y };
 }
+export function vecSet(v, x, y) {
+  v.x = x;
+  v.y = y;
+  return v;
+}
