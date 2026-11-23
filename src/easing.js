@@ -13,3 +13,6 @@ export function easeInOutQuad(t) {
 export function easeInCubic(t) {
   return t * t * t;
 }
+export function easeOutCubic(t) {
+  return (--t) * t * t + 1;
+}
