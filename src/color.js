@@ -44,3 +44,4 @@ export function isDark(r, g, b) {
 export const PRESET_SUMI = Object.freeze(['#0a0a0c', '#141418', '#22232a']);
 export const PRESET_INDIGO = Object.freeze(['#0b132b', '#1c2541', '#3a506b']);
 export const PRESET_VERMILION = Object.freeze(['#590d22', '#800f2f', '#a4133c']);
+export const PRESET_JADE = Object.freeze(['#081c15', '#1b4332', '#2d6a4f']);
