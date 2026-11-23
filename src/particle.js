@@ -67,3 +67,6 @@ export function scaleParticleVelocity(p, scale) {
   p.vx *= scale;
   p.vy *= scale;
 }
+export function setParticleAlpha(p, alpha) {
+  p.alpha = Math.max(0, Math.min(1, alpha));
+}
