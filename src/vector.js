@@ -17,3 +17,6 @@ export function vecNormalize(v) {
   const m = vecMag(v);
   return m > 0 ? vecScale(v, 1 / m) : { x: 0, y: 0 };
 }
+export function vecDot(v1, v2) {
+  return v1.x * v2.x + v1.y * v2.y };
+
