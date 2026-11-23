@@ -39,3 +39,7 @@ export function normalizeAngle(angle) {
 export function almostEqual(a, b, epsilon = 0.0001) {
   return Math.abs(a - b) < epsilon;
 }
+export function roundTo(val, decimals = 2) {
+  const factor = 10 ** decimals;
+  return Math.round(val * factor) / factor;
+}
