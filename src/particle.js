@@ -51,3 +51,6 @@ export function jitterParticle(p, amount = 0.2) {
 export function dampParticleRadius(p, minRadius = 1) {
   p.radius = Math.max(minRadius, p.radius * 0.99);
 }
+export function countActiveParticles(list) {
+  return list.filter(isParticleAlive).length;
+}
