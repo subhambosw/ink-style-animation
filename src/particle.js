@@ -63,3 +63,7 @@ export function setParticleMaxAge(p, maxAge) {
 export function setParticleRadius(p, radius) {
   p.radius = Math.max(0.1, radius);
 }
+export function scaleParticleVelocity(p, scale) {
+  p.vx *= scale;
+  p.vy *= scale;
+}
