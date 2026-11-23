@@ -37,3 +37,6 @@ export function easeInCirc(t) {
 export function easeOutCirc(t) {
   return Math.sqrt(1 - (--t) * t);
 }
+export function easeInSine(t) {
+  return 1 - Math.cos((t * Math.PI) / 2);
+}
