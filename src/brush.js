@@ -13,3 +13,6 @@ export function setBrushPressure(brush, pressure) {
 export function setBrushDown(brush, isDown) {
   brush.isDown = Boolean(isDown);
 }
+export function getBrushSpeed(brush) {
+  return Math.hypot(brush.x - brush.px, brush.y - brush.py);
+}
