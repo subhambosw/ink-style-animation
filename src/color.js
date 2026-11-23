@@ -10,3 +10,6 @@ export function hexToRgb(hex) {
   const num = parseInt(clean, 16);
   return [(num >> 16) & 255, (num >> 8) & 255, num & 255];
 }
+export function rgbToHex(r, g, b) {
+  return '#' + [r, g, b].map(x => Math.round(x).toString(16).padStart(2, '0')).join('');
+}
