@@ -34,3 +34,6 @@ export function easeOutExpo(t) {
 export function easeInCirc(t) {
   return 1 - Math.sqrt(1 - t * t);
 }
+export function easeOutCirc(t) {
+  return Math.sqrt(1 - (--t) * t);
+}
