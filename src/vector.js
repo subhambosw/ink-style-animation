@@ -46,3 +46,6 @@ export function vecDist(v1, v2) {
 export function vecLerp(v1, v2, t) {
   return { x: v1.x + (v2.x - v1.x) * t, y: v1.y + (v2.y - v1.y) * t };
 }
+export function vecZero() {
+  return { x: 0, y: 0 };
+}
