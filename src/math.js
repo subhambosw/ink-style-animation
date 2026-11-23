@@ -49,3 +49,6 @@ export function fract(val) {
 export function sign(val) {
   return val > 0 ? 1 : val < 0 ? -1 : 0;
 }
+export function step(edge, x) {
+  return x < edge ? 0 : 1;
+}
