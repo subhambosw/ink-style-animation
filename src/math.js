@@ -36,3 +36,6 @@ export function inverseLerp(a, b, val) {
 export function normalizeAngle(angle) {
   return (angle + Math.PI * 2) % (Math.PI * 2);
 }
+export function almostEqual(a, b, epsilon = 0.0001) {
+  return Math.abs(a - b) < epsilon;
+}
