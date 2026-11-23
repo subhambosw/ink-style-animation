@@ -30,3 +30,6 @@ export function smoothstep(edge0, edge1, x) {
   const t = clamp((x - edge0) / (edge1 - edge0), 0, 1);
   return t * t * (3 - 2 * t);
 }
+export function inverseLerp(a, b, val) {
+  return (val - a) / (b - a);
+}
