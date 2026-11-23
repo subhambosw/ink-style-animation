@@ -49,3 +49,6 @@ export function resetBrushHistory(brush) {
 export function setBrushHardness(brush, hardness = 0.8) {
   brush.hardness = Math.max(0, Math.min(1, hardness));
 }
+export function setBristleCount(brush, count = 16) {
+  brush.bristles = Math.max(1, count);
+}
