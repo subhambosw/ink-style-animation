@@ -40,3 +40,6 @@ export function vecSet(v, x, y) {
   v.y = y;
   return v;
 }
+export function vecDist(v1, v2) {
+  return Math.hypot(v2.x - v1.x, v2.y - v1.y);
+}
