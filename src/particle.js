@@ -48,3 +48,6 @@ export function jitterParticle(p, amount = 0.2) {
   p.vx += (Math.random() - 0.5) * amount;
   p.vy += (Math.random() - 0.5) * amount;
 }
+export function dampParticleRadius(p, minRadius = 1) {
+  p.radius = Math.max(minRadius, p.radius * 0.99);
+}
