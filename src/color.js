@@ -35,3 +35,6 @@ export function darken(rgb, amount = 0.2) {
 export function lighten(rgb, amount = 0.2) {
   return rgb.map(channel => Math.min(255, Math.round(channel + (255 - channel) * amount)));
 }
+export function getLuminance(r, g, b) {
+  return (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+}
