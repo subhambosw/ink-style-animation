@@ -22,3 +22,10 @@ export function hsl(h, s, l) {
 export function hsla(h, s, l, a = 1) {
   return `hsla(${h}, ${s}%, ${l}%, ${a})`;
 }
+export function blend(c1, c2, factor = 0.5) {
+  return [
+    Math.round(c1[0] + (c2[0] - c1[0]) * factor),
+    Math.round(c1[1] + (c2[1] - c1[1]) * factor),
+    Math.round(c1[2] + (c2[2] - c1[2]) * factor)
+  ];
+}
