@@ -30,3 +30,6 @@ export function renderParticle(ctx, p, color = '#1a1a24') {
   ctx.fill();
   ctx.restore();
 }
+export function diffuseParticle(p, spreadRate = 0.05) {
+  p.radius += spreadRate;
+}
