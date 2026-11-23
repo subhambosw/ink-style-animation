@@ -42,3 +42,7 @@ export function getBrushHeading(brush) {
 export function isBrushMoving(brush, threshold = 0.5) {
   return getBrushSpeed(brush) > threshold;
 }
+export function resetBrushHistory(brush) {
+  brush.px = brush.x;
+  brush.py = brush.y;
+}
