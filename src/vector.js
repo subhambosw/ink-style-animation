@@ -23,3 +23,8 @@ export function vecDot(v1, v2) {
 export function vecHeading(v) {
   return Math.atan2(v.y, v.x);
 }
+export function vecRotate(v, rad) {
+  const cos = Math.cos(rad);
+  const sin = Math.sin(rad);
+  return { x: v.x * cos - v.y * sin, y: v.x * sin + v.y * cos };
+}
