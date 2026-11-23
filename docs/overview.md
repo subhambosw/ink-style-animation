@@ -12,3 +12,9 @@ The core architecture separates mathematical modeling, particle physics, and can
 ## Rendering Loop
 The animation runs on a 60 FPS requestAnimationFrame scheduler.
 Each frame steps particle velocity, applies friction, and draws to the buffer canvas.
+## Supported Browsers
+Modern browsers with HTML5 Canvas 2D Context and ES Modules support:
+- Chrome 80+
+- Firefox 78+
+- Safari 14+
+- Edge 80+
