@@ -36,3 +36,6 @@ export function renderStroke(ctx, brush, color = '#090a10') {
 export function setBrushSize(brush, size) {
   brush.size = Math.max(1, size);
 }
+export function getBrushHeading(brush) {
+  return Math.atan2(brush.y - brush.py, brush.x - brush.px);
+}
