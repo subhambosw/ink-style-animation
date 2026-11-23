@@ -40,3 +40,6 @@ export function easeOutCirc(t) {
 export function easeInSine(t) {
   return 1 - Math.cos((t * Math.PI) / 2);
 }
+export function easeOutSine(t) {
+  return Math.sin((t * Math.PI) / 2);
+}
