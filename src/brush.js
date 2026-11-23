@@ -33,3 +33,6 @@ export function renderStroke(ctx, brush, color = '#090a10') {
   ctx.stroke();
   ctx.restore();
 }
+export function setBrushSize(brush, size) {
+  brush.size = Math.max(1, size);
+}
