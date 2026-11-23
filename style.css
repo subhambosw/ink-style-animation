@@ -1,0 +1,23 @@
+:root {
+  --bg-color: #0d0e15;
+  --canvas-filter: blur(0.5px);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-color);
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+#ink-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

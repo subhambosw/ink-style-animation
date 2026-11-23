@@ -1,0 +1,14 @@
+{
+  "name": "ink-style-animation",
+  "version": "1.0.0",
+  "description": "Fluid ink dispersion canvas animation",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "start": "serve .",
+    "test": "node tests/run.js"
+  },
+  "keywords": ["canvas", "animation", "ink", "fluid"],
+  "author": "subham bose",
+  "license": "MIT"
+}
