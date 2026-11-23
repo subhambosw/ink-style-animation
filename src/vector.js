@@ -13,3 +13,7 @@ export function vecScale(v, factor) {
 export function vecMag(v) {
   return Math.hypot(v.x, v.y);
 }
+export function vecNormalize(v) {
+  const m = vecMag(v);
+  return m > 0 ? vecScale(v, 1 / m) : { x: 0, y: 0 };
+}
