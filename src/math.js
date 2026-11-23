@@ -23,3 +23,6 @@ export function degToRad(degrees) {
 export function radToDeg(radians) {
   return (radians * 180) / Math.PI;
 }
+export function mapRange(value, inMin, inMax, outMin, outMax) {
+  return outMin + ((value - inMin) * (outMax - outMin)) / (inMax - inMin);
+}
