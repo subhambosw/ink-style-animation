@@ -33,3 +33,6 @@ export function smoothstep(edge0, edge1, x) {
 export function inverseLerp(a, b, val) {
   return (val - a) / (b - a);
 }
+export function normalizeAngle(angle) {
+  return (angle + Math.PI * 2) % (Math.PI * 2);
+}
