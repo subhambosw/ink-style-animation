@@ -5,3 +5,8 @@ export function createPalette(name = 'default') {
     accent: '#394867'
   };
 }
+export function hexToRgb(hex) {
+  const clean = hex.replace('#', '');
+  const num = parseInt(clean, 16);
+  return [(num >> 16) & 255, (num >> 8) & 255, num & 255];
+}
