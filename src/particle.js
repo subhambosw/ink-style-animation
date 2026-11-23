@@ -44,3 +44,7 @@ export function resetParticle(p, x, y) {
   p.alpha = 1;
   p.age = 0;
 }
+export function jitterParticle(p, amount = 0.2) {
+  p.vx += (Math.random() - 0.5) * amount;
+  p.vy += (Math.random() - 0.5) * amount;
+}
