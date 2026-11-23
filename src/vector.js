@@ -43,3 +43,6 @@ export function vecSet(v, x, y) {
 export function vecDist(v1, v2) {
   return Math.hypot(v2.x - v1.x, v2.y - v1.y);
 }
+export function vecLerp(v1, v2, t) {
+  return { x: v1.x + (v2.x - v1.x) * t, y: v1.y + (v2.y - v1.y) * t };
+}
