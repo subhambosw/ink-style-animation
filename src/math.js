@@ -43,3 +43,6 @@ export function roundTo(val, decimals = 2) {
   const factor = 10 ** decimals;
   return Math.round(val * factor) / factor;
 }
+export function fract(val) {
+  return val - Math.floor(val);
+}
