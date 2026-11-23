@@ -32,3 +32,6 @@ export function blend(c1, c2, factor = 0.5) {
 export function darken(rgb, amount = 0.2) {
   return rgb.map(channel => Math.max(0, Math.round(channel * (1 - amount))));
 }
+export function lighten(rgb, amount = 0.2) {
+  return rgb.map(channel => Math.min(255, Math.round(channel + (255 - channel) * amount)));
+}
