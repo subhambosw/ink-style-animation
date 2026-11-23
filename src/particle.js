@@ -17,3 +17,7 @@ export function updateParticlePhysics(p, friction = 0.96) {
   p.alpha = Math.max(0, 1 - p.age / p.maxAge);
   return p.age < p.maxAge;
 }
+export function applyParticleForce(p, fx, fy) {
+  p.vx += fx;
+  p.vy += fy;
+}
