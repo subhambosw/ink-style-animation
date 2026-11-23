@@ -26,3 +26,7 @@ export function radToDeg(radians) {
 export function mapRange(value, inMin, inMax, outMin, outMax) {
   return outMin + ((value - inMin) * (outMax - outMin)) / (inMax - inMin);
 }
+export function smoothstep(edge0, edge1, x) {
+  const t = clamp((x - edge0) / (edge1 - edge0), 0, 1);
+  return t * t * (3 - 2 * t);
+}
