@@ -32,3 +32,6 @@ export function vecLimit(v, max) {
   const m = vecMag(v);
   return m > max ? vecScale(vecNormalize(v), max) : { x: v.x, y: v.y };
 }
+export function vecCopy(v) {
+  return { x: v.x, y: v.y };
+}
