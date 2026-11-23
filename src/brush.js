@@ -39,3 +39,6 @@ export function setBrushSize(brush, size) {
 export function getBrushHeading(brush) {
   return Math.atan2(brush.y - brush.py, brush.x - brush.px);
 }
+export function isBrushMoving(brush, threshold = 0.5) {
+  return getBrushSpeed(brush) > threshold;
+}
