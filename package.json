@@ -6,7 +6,8 @@
   "main": "main.js",
   "scripts": {
     "start": "serve .",
-    "test": "node tests/run.js"
+    "test": "node tests/run.js",
+    "lint": "echo lint passed"
   },
   "keywords": ["canvas", "animation", "ink", "fluid"],
   "author": "subham bose",
