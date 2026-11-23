@@ -41,3 +41,4 @@ export function getLuminance(r, g, b) {
 export function isDark(r, g, b) {
   return getLuminance(r, g, b) < 0.5;
 }
+export const PRESET_SUMI = Object.freeze(['#0a0a0c', '#141418', '#22232a']);
