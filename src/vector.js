@@ -28,3 +28,7 @@ export function vecRotate(v, rad) {
   const sin = Math.sin(rad);
   return { x: v.x * cos - v.y * sin, y: v.x * sin + v.y * cos };
 }
+export function vecLimit(v, max) {
+  const m = vecMag(v);
+  return m > max ? vecScale(vecNormalize(v), max) : { x: v.x, y: v.y };
+}
