@@ -36,3 +36,11 @@ export function diffuseParticle(p, spreadRate = 0.05) {
 export function isParticleAlive(p) {
   return p.alpha > 0.01 && p.age < p.maxAge;
 }
+export function resetParticle(p, x, y) {
+  p.x = x;
+  p.y = y;
+  p.vx = 0;
+  p.vy = 0;
+  p.alpha = 1;
+  p.age = 0;
+}
