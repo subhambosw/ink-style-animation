@@ -52,3 +52,6 @@ export function setBrushHardness(brush, hardness = 0.8) {
 export function setBristleCount(brush, count = 16) {
   brush.bristles = Math.max(1, count);
 }
+export function getBrushAlpha(brush) {
+  return Math.max(0.1, brush.pressure);
+}
