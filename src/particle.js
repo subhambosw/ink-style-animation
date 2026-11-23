@@ -57,3 +57,6 @@ export function countActiveParticles(list) {
 export function pruneDeadParticles(list) {
   return list.filter(isParticleAlive);
 }
+export function setParticleMaxAge(p, maxAge) {
+  p.maxAge = Math.max(1, maxAge);
+}
