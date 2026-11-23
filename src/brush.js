@@ -46,3 +46,6 @@ export function resetBrushHistory(brush) {
   brush.px = brush.x;
   brush.py = brush.y;
 }
+export function setBrushHardness(brush, hardness = 0.8) {
+  brush.hardness = Math.max(0, Math.min(1, hardness));
+}
