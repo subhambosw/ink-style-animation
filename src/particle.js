@@ -54,3 +54,6 @@ export function dampParticleRadius(p, minRadius = 1) {
 export function countActiveParticles(list) {
   return list.filter(isParticleAlive).length;
 }
+export function pruneDeadParticles(list) {
+  return list.filter(isParticleAlive);
+}
