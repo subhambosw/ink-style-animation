@@ -33,3 +33,6 @@ export function renderParticle(ctx, p, color = '#1a1a24') {
 export function diffuseParticle(p, spreadRate = 0.05) {
   p.radius += spreadRate;
 }
+export function isParticleAlive(p) {
+  return p.alpha > 0.01 && p.age < p.maxAge;
+}
