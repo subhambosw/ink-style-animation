@@ -21,3 +21,15 @@ export function getDynamicSize(brush, minScale = 0.4) {
   const speedDamp = Math.max(minScale, 1 - speed / 50);
   return brush.size * brush.pressure * speedDamp;
 }
+export function renderStroke(ctx, brush, color = '#090a10') {
+  ctx.save();
+  ctx.strokeStyle = color;
+  ctx.lineWidth = getDynamicSize(brush);
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+  ctx.beginPath();
+  ctx.moveTo(brush.px, brush.py);
+  ctx.lineTo(brush.x, brush.y);
+  ctx.stroke();
+  ctx.restore();
+}
