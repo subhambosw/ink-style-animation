@@ -10,3 +10,6 @@ export function setBrushPosition(brush, x, y) {
 export function setBrushPressure(brush, pressure) {
   brush.pressure = Math.max(0, Math.min(1, pressure));
 }
+export function setBrushDown(brush, isDown) {
+  brush.isDown = Boolean(isDown);
+}
