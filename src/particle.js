@@ -21,3 +21,12 @@ export function applyParticleForce(p, fx, fy) {
   p.vx += fx;
   p.vy += fy;
 }
+export function renderParticle(ctx, p, color = '#1a1a24') {
+  ctx.save();
+  ctx.globalAlpha = p.alpha;
+  ctx.fillStyle = color;
+  ctx.beginPath();
+  ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.restore();
+}
