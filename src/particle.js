@@ -60,3 +60,6 @@ export function pruneDeadParticles(list) {
 export function setParticleMaxAge(p, maxAge) {
   p.maxAge = Math.max(1, maxAge);
 }
+export function setParticleRadius(p, radius) {
+  p.radius = Math.max(0.1, radius);
+}
