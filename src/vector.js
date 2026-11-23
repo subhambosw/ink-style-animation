@@ -10,3 +10,6 @@ export function vecSub(v1, v2) {
 export function vecScale(v, factor) {
   return { x: v.x * factor, y: v.y * factor };
 }
+export function vecMag(v) {
+  return Math.hypot(v.x, v.y);
+}
