@@ -16,3 +16,8 @@ export function setBrushDown(brush, isDown) {
 export function getBrushSpeed(brush) {
   return Math.hypot(brush.x - brush.px, brush.y - brush.py);
 }
+export function getDynamicSize(brush, minScale = 0.4) {
+  const speed = getBrushSpeed(brush);
+  const speedDamp = Math.max(minScale, 1 - speed / 50);
+  return brush.size * brush.pressure * speedDamp;
+}
