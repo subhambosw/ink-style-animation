@@ -19,3 +19,6 @@ export function rgba(r, g, b, a = 1) {
 export function hsl(h, s, l) {
   return `hsl(${h}, ${s}%, ${l}%)`;
 }
+export function hsla(h, s, l, a = 1) {
+  return `hsla(${h}, ${s}%, ${l}%, ${a})`;
+}
