@@ -20,3 +20,6 @@ export function vecNormalize(v) {
 export function vecDot(v1, v2) {
   return v1.x * v2.x + v1.y * v2.y };
 
+export function vecHeading(v) {
+  return Math.atan2(v.y, v.x);
+}
