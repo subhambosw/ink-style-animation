@@ -55,3 +55,7 @@ export function setBristleCount(brush, count = 16) {
 export function getBrushAlpha(brush) {
   return Math.max(0.1, brush.pressure);
 }
+export function clearBrush(brush) {
+  brush.isDown = false;
+  brush.pressure = 0;
+}
