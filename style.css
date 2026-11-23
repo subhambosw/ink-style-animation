@@ -45,3 +45,7 @@ body {
 .btn:hover {
   background: #2d3748;
 }
+
+.canvas-active {
+  cursor: crosshair;
+}
