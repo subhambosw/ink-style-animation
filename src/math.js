@@ -46,3 +46,6 @@ export function roundTo(val, decimals = 2) {
 export function fract(val) {
   return val - Math.floor(val);
 }
+export function sign(val) {
+  return val > 0 ? 1 : val < 0 ? -1 : 0;
+}
